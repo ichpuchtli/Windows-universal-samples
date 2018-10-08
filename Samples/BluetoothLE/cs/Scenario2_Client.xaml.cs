@@ -519,7 +519,7 @@ namespace SDKTemplate
                     }
                 }
                 // This is our custom calc service Result UUID. Format it like an Int
-                else if (selectedCharacteristic.Uuid.Equals(Constants.ResultCharacteristicUuid))
+                else if (selectedCharacteristic.Uuid.Equals(Constants.OnboardingResultCharacteristicUuid))
                 {
                     return BitConverter.ToInt32(data, 0).ToString();
                 }
@@ -527,7 +527,7 @@ namespace SDKTemplate
                 else if (registeredCharacteristic != null)
                 {
                     // This is our custom calc service Result UUID. Format it like an Int
-                    if (registeredCharacteristic.Uuid.Equals(Constants.ResultCharacteristicUuid))
+                    if (registeredCharacteristic.Uuid.Equals(Constants.OnboardingResultCharacteristicUuid))
                     {
                         return BitConverter.ToInt32(data, 0).ToString();
                     }
